@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Tenche Alexandru">
-	<title>Zajdeno</title>
+	<title>Zajdeno - 10 ian</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
 		html, body{
@@ -19,9 +19,17 @@
 			height: 80%;
 			width: 80%;
 		}
-		#topRow{
-			margin-top: 100px;
-			text-align: center;
+		#numeZajedno{
+			border-radius: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border: 1px solid black;
+			height: 200px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+		#numeZajedno img {
+			margin-top:25px;
+			width: 100%;
 		}
 		.block{
 			border-radius: 10px;
@@ -78,13 +86,17 @@
 			<div class="col-md-3 col-md-offset-1 block">
 				<img src="images/pozaBucatar.png">
 			</div><!-- poza buctar 1 -->
-			<div class="col-md-3 block"></div><!-- picture 2 -->
-			<div class="col-md-3 block"></div><!-- picture 3 -->
+			<div class="col-md-3 block">
+				<img src="images/pozaBucatar.png">
+			</div><!-- picture 2 -->
+			<div class="col-md-3 block">
+				<img src="images/pozaBucatar.png">
+			</div><!-- picture 3 -->
 		</div><!-- pictures -->
 
 		<div class="row"> 
-			<div class="col-md-6 col-md-offset-3 block">
-				<img src="images/zajednoName.png" width="100%" >
+			<div class="col-md-6 col-md-offset-3" id="numeZajedno">
+				<img src="images/zajednoName.png" alt="nume Zajedno">
 			</div><!-- zajedno -->
 		</div><!-- zajedno --> 
 
