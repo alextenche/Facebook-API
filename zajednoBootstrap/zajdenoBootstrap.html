@@ -16,40 +16,99 @@
 		}
 		.container{
 			padding-top: 20px;
-			height: 80%;
+			height: 90%;
 			width: 80%;
 		}
 		#numeZajedno{
 			border-radius: 10px;
-			background-color: rgba(255,255,255,0.5);
+			background-color: rgba(255,255,255,0.6);
 			border: 1px solid black;
-			height: 200px;
 			margin-bottom: 15px;
 			margin-top: 15px;
 		}
 		#numeZajedno img {
-			margin-top:25px;
+			margin-top: 15px;
+			margin-bottom: 15px;
 			width: 100%;
+			height: 100%;
 		}
 		.block{
 			border-radius: 10px;
-			background-color: rgba(255,255,255,0.5);
+			background-color: rgba(255,255,255,0.6);
 			border: 1px solid black;
-			height: 250px;
 		}
 		.listaMeniu{
 			border-radius: 20px;
 			background-color: #f2f2f2;
 			border: 1px solid black;
-			height: 500px;
+			height: 700px;
+			margin: 15px;
+    		width: 30%;
+    		background-color: rgba(255,255,255,0.6);
+		}
+		#buc1{
+			margin: 15px;
+    		width: 30%;
+    		margin-top: 60px;
+    		text-align: center;
+    		font-weight: bold;
+			font-size: 1.5em;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			color: #2E2E2E;
+		}
+		#buc1 img{
+			width: 50%;
+			display: block;
+			margin: 15px auto;
+		}
+		#buc2{
+			margin: 15px;
+    		width: 30%;
+    		text-align: center;
+    		font-weight: bold;
+			font-size: 1.5em;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			color: #2E2E2E;
+		}
+		#buc2 img{
+			width: 50%;
+			display: block;
+			margin: 15px auto;
+		}
+		#buc3{
+			margin: 15px;
+    		width: 30%;
+    		margin-top: 60px;
+    		text-align: center;
+    		font-weight: bold;
+			font-size: 1.5em;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			color: #2E2E2E;
+		}
+		#buc3 img{
+			width: 50%;
+			display: block;
+			margin: 15px auto;
+		}
+		#descriere{
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		#descriere p{
+			padding: 15px;
+			font-weight: bold;
+			font-size: 1.5em;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			color: #2E2E2E;
+		}
+		#footer{
+			text-align: center;
 		}
 		h1{
 			font-size: 400%;
 			font-weight: bold;
 		}
-		p{
-			font-weight: bold;
-		}
+	
 		.marginTop{
 			margin-top: 30px;
 		}
@@ -63,18 +122,7 @@
 		.marginBottom{
 			margin-bottom: 30px;
 		}
-		#success{
-			margin-top: 20px;
-			display: none;
-		}
-		#fail{
-			margin-top: 20px;
-			display: none;
-		}
-		#noCity{
-			margin-top: 20px;
-			display: none;
-		}
+		
 	</style>
 </head>
 
@@ -83,32 +131,52 @@
 	<div class="container">	
 
 		<div class="row"> 
-			<div class="col-md-3 col-md-offset-1 block">
-				<img src="images/pozaBucatar.png">
+
+			<div class="col-sm-4 block" id="buc1">
+				<img src="images/pozaBucatar.png" alt="poza master chef 1">
+				<p>Ion Popescu</p>
+				<p>0765 123 123</p>
 			</div><!-- poza buctar 1 -->
-			<div class="col-md-3 block">
-				<img src="images/pozaBucatar.png">
+
+			<div class="col-sm-4 block" id="buc2">
+				<img src="images/pozaBucatar.png" alt="poza master chef 2">
+				<p>Ion Popescu</p>
+				<p>0765 123 123</p>
 			</div><!-- picture 2 -->
-			<div class="col-md-3 block">
-				<img src="images/pozaBucatar.png">
+
+			<div class="col-sm-4 block" id="buc3">
+				<img src="images/pozaBucatar.png" alt="poza master chef 2">
+				<p>Ion Popescu</p>
+				<p>0765 123 123</p>
 			</div><!-- picture 3 -->
+
 		</div><!-- pictures -->
 
 		<div class="row"> 
-			<div class="col-md-6 col-md-offset-3" id="numeZajedno">
-				<img src="images/zajednoName.png" alt="nume Zajedno">
+			<div class="col-sm-6 col-sm-offset-3" id="numeZajedno">
+				<img src="images/zajednoNume.png" alt="nume Zajedno">
 			</div><!-- zajedno -->
 		</div><!-- zajedno --> 
 
 		<div class="row"> 
-			<div class="col-md-8 col-md-offset-2 block"></div><!-- descriere -->
+			<div class="col-sm-8 col-sm-offset-2 block" id="descriere">
+				<p>De 8 ani pe piata de catering, Zajedno, este o firma de catering care ofera servici de catering, de un inalt standard de calitate, o gamă variată de preparate reci si calde din bucataria romaneasca si internationala la preturi accesibile, servire ireprosabila si cladirea unor relatii de durata cu parteneri de incredere. Livrăm mancare gatita dupa retete traditionale de bucatari priceputi, la domiciliu sau la birou, oferim diversitate si profesionalism, atat in sfera publica cat si in cea privata, iar gustul ales al mancarurilor noastre se incadreaza in standardele internationale de calitate.</p>
+	
+				<p>Apeland la Zajedno beneficiati de o oferta variata de servicii de catering, retete rapide, livrare rapida, livrari la domiciliu, flexibilitate, retete mancaruri de calitate, exceptional raport calitate/pret, punand la dispozitia dumneavoastra servicii diverse, pornind de la asigurarea unei mese calde la locul de munca, pana la cocteiluri sau evenimente de orice tip, organizate in cele mai mici detalii.</p>
+			</div><!-- descriere -->
 		</div><!-- descriere --> 
 
 		<div class="row"> 
-			<div class="col-md-4 listaMeniu"></div><!-- bucatarie -->
-			<div class="col-md-4 listaMeniu"></div><!-- patiserie -->
-			<div class="col-md-4 listaMeniu"></div><!-- cofetarie -->
-		</div><!-- meniuri -->		
+			<div class="col-sm-4 listaMeniu"></div><!-- bucatarie -->
+			<div class="col-sm-4 listaMeniu"></div><!-- patiserie -->
+			<div class="col-sm-4 listaMeniu"></div><!-- cofetarie -->
+		</div><!-- meniuri -->	
+
+		<div class="row"> 
+			<div class="col-sm-8 col-sm-offset-2 block" id="footer">
+				<p>&copy; Zajedno - 2014 - <small>alexTenche</small></p>
+			</div><!-- footer -->
+		</div><!-- footer -->	
 
 	</div><!-- container -->
 
