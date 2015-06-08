@@ -1,3 +1,4 @@
-# Facebook-API
+# jobsBoard
 
-learning facebook API
+HTML KickStart
+PHP with MySQL
