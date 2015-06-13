@@ -35,60 +35,22 @@
 		<div class="col_12 column">
 			<!-- Menu Horizontal -->
 			<ul class="menu">
-				<li class="current"><a href="<?php echo $this->webroot;?>"><i class="fa fa-home"></i> home </a></li>
-				<li><a href="<?php echo $this->webroot;?>jobs/browse"><i class="fa fa-desktop"></i> browse jobs </a></li>
-				<li><a href="<?php echo $this->webroot;?>users/register"><i class="fa fa-user"></i> register </a></li>
-				<li><a href="<?php echo $this->webroot;?>users/login"><i class="fa fa-key"></i> login </a></li>
+				<li <?php echo ($this->here == '/jobsBoard/' || $this->here == '/jobsBoard/jobs') ? 'class="current"' : ''; ?> >
+					<a href="<?php echo $this->webroot;?>"><i class="fa fa-home"></i> home </a></li>
+				<li <?php echo ($this->here == '/jobsBoard/jobs/browse') ? 'class="current"' : '' ?> >
+					<a href="<?php echo $this->webroot;?>jobs/browse"><i class="fa fa-desktop"></i> browse jobs </a></li>
+				<li <?php echo ($this->here == '/jobsBoard/users/register') ? 'class="current"' : '' ?> >
+					<a href="<?php echo $this->webroot;?>users/register"><i class="fa fa-user"></i> register </a></li>
+				<li <?php echo ($this->here == '/jobsBoard/users/login') ? 'class="current"' : '' ?> >
+					<a href="<?php echo $this->webroot;?>users/login"><i class="fa fa-key"></i> login </a></li>
 			</ul>
 		</div>
 
-		<div id="search_area" class="col_12 column">
-			<form class="horizontal" method="post" action="">
-				<input id="keywords" type="text" placeholder="Enter keywords...">
-				<select id="select_state">
-					<option> select state </option>
-				</select>
-				<select id="select_category">
-					<option> select category </option>
-				</select>
-				<button type="submit"> sumbit </button>
-			</form>
-		</div>
+		
 
 		<div class="col_12 column">
-			<h3> latest job listings </h3>
-			<ul id="listings">
-				<li class="first">
-					<div class="type">
-						<span class="green"> full time </span>
-					</div>
-					<div class="description">
-						<h5> senior grapich designer (burlinghton, MA) </h5>
-						lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
-						 lorem ipsum lorem ipsum lorem ipsumlorem lorem ipsum <a href="details.html"><i class="fa fa-plus"></i> read more </a>
-					</div>
-				</li>
-				<li>
-					<div class="type">
-						<span class="blue"> part time </span>
-					</div>
-					<div class="description">
-						<h5> senior grapich designer (burlinghton, MA) </h5>
-						lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
-						 lorem ipsum lorem ipsum lorem ipsumlorem lorem ipsum <a href="details.html"><i class="fa fa-plus"></i> read more </a>
-					</div>
-				</li>
-				<li>
-					<div class="type">
-						<span class="green"> full time </span>
-					</div>
-					<div class="description">
-						<h5> senior grapich designer (burlinghton, MA) </h5>
-						lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
-						 lorem ipsum lorem ipsum lorem ipsumlorem lorem ipsum <a href="details.html"><i class="fa fa-plus"></i> read more </a>
-					</div>
-				</li>
-			</ul>
+			<?php echo $this->Session->flash(); ?>
+			<?php echo $this->fetch('content'); ?>
 		</div>
 
 		<div class="clearfix"></div>
