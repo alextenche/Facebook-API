@@ -1,6 +1,7 @@
 <?php echo $this->Form->create('Job'); ?>
 
 <fieldset>
+	<legend><?php echo __('add job listing'); ?></legend>
 	<?php echo $this->Form->input('title'); ?>
 	<?php echo $this->Form->input('company_name'); ?>
 	<?php echo $this->Form->input('category_id', array('type' => 'select', 'options' => $categories, 'empty' => 'select category')); ?>

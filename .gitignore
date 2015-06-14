@@ -256,6 +256,7 @@ Thumbs.db
 .buildpath
  
 # Cake TMP Dirs
+app/tmp/*
 /app/tmp/*
 !/app/tmp/
  
@@ -286,3 +287,10 @@ Thumbs.db
 /app/tmp/tests/*
 !/app/tmp/tests/
 !/app/tmp/tests/empty
+app/tmp/cache/persistent/myapp_cake_core_cake_dev_ro
+app/tmp/cache/persistent/myapp_cake_core_cake_dev_ro
+app/tmp/cache/persistent/myapp_cake_core_file_map
+app/tmp/cache/persistent/myapp_cake_core_method_cache
+app/tmp
+app/tmp/
+app/tmp/*
