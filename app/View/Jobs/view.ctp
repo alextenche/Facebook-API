@@ -8,6 +8,9 @@
 	<li><strong> contact email: </strong><a href="#"> <?php echo $job['Job']['contact_email'];?> </a></li>
 </ul>
 <p><a href="<?php echo $this->webroot;?>jobs/browse"> back to jobs </a></p>
-<br><br>
-<?php echo $this->Html->link('edit', array('action' => 'edit', $job['Job']['id'])); ?> |
-<?php echo $this->Form->postLink('delete', array('action' => 'delete', $job['Job']['id']), array('confirm' => 'are you sure ?')); ?>
+
+<?php if($userData['id'] == $job['Job']['user_id']) : ?>
+	<br><br>
+	<?php echo $this->Html->link('edit', array('action' => 'edit', $job['Job']['id'])); ?> |
+	<?php echo $this->Form->postLink('delete', array('action' => 'delete', $job['Job']['id']), array('confirm' => 'are you sure ?')); ?>
+<?php endif; ?>

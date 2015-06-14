@@ -146,7 +146,7 @@ class JobsController extends AppController{
 			$this->Job->create();
 
 			// save logged user_id
-			$this->request->data['Job']['user_id'] = 1;
+			$this->request->data['Job']['user_id'] = $this->Auth->user('id');
 
 			if($this->Job->save($this->request->data)){
 				$this->Session->setFlash(__('your job has been listed'));

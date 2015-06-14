@@ -17,8 +17,39 @@ public $name = 'Users';
 			} else {
 				$this->Session->setFlash(__('there was a problem creating your account'));
 			}
+		}	
+	}
+
+
+
+
+
+	/*
+	 * login user
+	 */
+	public function login(){
+
+		if($this->request->is('post')){
+			if($this->Auth->login()){
+				return $this->redirect($this->Auth->redirect());
+			} else {
+				$this->Session->setFlash(__('invalid username or password, try again'));
+			}
 		}
-		
+	}
+
+
+
+
+
+
+	/*
+	 * logout user
+	 */
+	public function logout(){
+
+		return $this->redirect($this->Auth->logout());
+
 	}
 
 
